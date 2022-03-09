@@ -31,12 +31,12 @@ and many other IT needs.
 | Time                    | Topics
 | ----------------------- |-------
 | 09:00 - 9:30            |  [`Introduction to Git`](prerequisites/introduction_to_git.md)
-| 9:30  - 10:00           |  [`What is Ansible`](ansible/docs/what_is_ansible.md)
-| 10:00 - 10:30           |  [`Intstalling Ansible`](ansible/docs/installing_ansible.md)
-| 10:30 - 11:30           |  [`Running Ad hoc commands`](ansible/docs/running_adhoc_commands.md)
-| 11:30 - 1:00            |  [`Writing your first playbook`](ansible/docs/writing_your_first_palybook.md)
+| 9:30  - 10:00           |  [`What is Ansible`](/docs/what_is_ansible.md)
+| 10:00 - 10:30           |  [`Intstalling Ansible`](/docs/installing_ansible.md)
+| 10:30 - 11:30           |  [`Running Ad hoc commands`](/docs/running_adhoc_commands.md)
+| 11:30 - 1:00            |  [`Writing your first playbook`](/docs/writing_your_first_palybook.md)
 | 1:00 -  2:00            |  `Break`
-| 2:00 -  2:30            |  [`Variables`](ansible/docs/variables.md)
-| 2:30 -  3:00            |  [`Conditionals and Loops`](ansible/docs/conditionals_and_loops.md)
-| 3:00 -  3:30            |  [`Templates`](ansible/docs/templates.md)
+| 2:00 -  2:30            |  [`Variables`](/docs/variables.md)
+| 2:30 -  3:00            |  [`Conditionals and Loops`](/docs/conditionals_and_loops.md)
+| 3:00 -  3:30            |  [`Templates`](/docs/templates.md)
 | 3:30 -  4:30            |  `Q & A and Wrapping Up`
