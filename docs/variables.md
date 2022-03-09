@@ -88,3 +88,7 @@ Facts can be used in a Playbook like variables, using the proper naming, of cour
      debug:
        msg: The default IPv4 address of {{ ansible_fqdn }} is {{ ansible_default_ipv4.address }}     
 ```
+
+___
+
+[Home](../README.md)

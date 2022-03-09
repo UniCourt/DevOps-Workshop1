@@ -154,4 +154,6 @@ Run the Playbook a second time to get used to the change in the output.
 
 ## Step 5 - Extend your Playbook to pull a docker image
 
+___
 
+[Home](../README.md)

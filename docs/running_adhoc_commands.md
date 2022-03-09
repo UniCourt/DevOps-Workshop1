@@ -122,3 +122,6 @@ For us it’s okay to connect as student<X> because sudo is set up. Change the c
 
 This time the command is a success:
 
+___
+
+[Home](../README.md)

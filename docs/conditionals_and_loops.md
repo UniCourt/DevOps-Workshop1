@@ -88,3 +88,6 @@ Let’s rewrite the playbook to pull the images with different versions
          - {name: postgres, version:1.0}
          - {name: alpine, version: 2.0}
 ```
+___
+
+[Home](../README.md)
