@@ -20,7 +20,7 @@ and many other IT needs.
 - To install docker go to your cloned repository and run the following command
 - `sudo prerequisites/install_docker.sh`
 
-## End of the workshop
+## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what is ansible and how to install it
 - You will understand how to run Ad-hoc commands via Ansible
 - You will understand what are Ansible Playbooks and how to write them
