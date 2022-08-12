@@ -6,9 +6,9 @@ and many other IT needs.
 ## Prerequisite
 
 ##### Any Linux machine/VM with following packages installed
-- Python 3.6 or above 
-- pip3
-- git (any recent version)
+- [Python 3.6](https://www.python.org/downloads/source/) or above 
+- [pip3](https://pip.pypa.io/en/stable/installation/)
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (any recent version)
 
 ##### GitHub account
 - Create an account on [GitHub](https://github.com/join) (if you don't already have one)
