@@ -21,7 +21,7 @@ installing_piplibs() {
 
 set_ansible_cfg() {
     ANSIBLE_PATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
-    ANSIBLE_CONFIG="[defaults]\nroles_path = ${ANSIBLE_PATH}/roles\ninventory = ${ANSIBLE_PATH}/inventory\nlog_path = /var/log/ansible.log"
+    ANSIBLE_CONFIG="[defaults]\nroles_path = ${ANSIBLE_PATH}/roles\ninventory = ${ANSIBLE_PATH}/inventory\n"
     # Creating the /etc/ansible folder
     sudo mkdir -p /etc/ansible
     # Generating the cfg file
