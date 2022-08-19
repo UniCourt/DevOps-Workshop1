@@ -98,11 +98,11 @@ In the added lines:
 Ansible Playbooks are executed using the ansible-playbook command on the control node. Before you run a new Playbook it’s a good idea to check for syntax errors:
 
 
-`[student<X>DevOps-Workshop1/ansible_files]$ ansible-playbook --syntax-check docker.yaml`
+`[student<X>DevOps-Workshop1/ansible_files]$ sudo ansible-playbook --syntax-check docker.yaml`
 
 Now you should be ready to run your playbook:
 
-`[student<X>DevOps-Workshop1/ansible_files]$ ansible-playbook docker.yaml`
+`[student<X>DevOps-Workshop1/ansible_files]$ sudo ansible-playbook docker.yaml`
 
 The output should not report any errors but provide an overview of the tasks executed and a play recap summarizing what has been done. There is also a task called “Gathering Facts” listed there: this is an built-in task that runs automatically at the beginning of each play. It collects information about the managed nodes. Exercises later on will cover this in more detail.
 
@@ -142,7 +142,7 @@ Again: what these lines do is easy to understand:
 
 Thus with the second task we make sure the docker is indeed running on the target machine. Run your extended Playbook:
 
-`[student<X>DevOps-Workshop1/ansible_files]$ ansible-playbook docker.yaml`
+`[student<X>DevOps-Workshop1/ansible_files]$ sudo ansible-playbook docker.yaml`
 
 
 Note the output now: Some tasks are shown as “ok” in green and one is shown as “changed” in yellow.

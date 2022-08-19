@@ -18,16 +18,16 @@ To use the ansible command for host management, you need to provide an inventory
 all:
   hosts:
     mail.example.com:
+      ansible_connection: local
   children:
     webserver:
       hosts:
         foo.example.com:
           ansible_connection: local
-    dbservers:
+    dbserver:
       hosts:
         bar.example.com:
           ansible_connection: local
-
 ```
 
 To reference inventory hosts, you supply a host pattern to the ansible command. Ansible has a --list-hosts option which can be useful for clarifying which managed hosts are referenced by the host pattern in an ansible command.
@@ -40,8 +40,8 @@ To reference inventory hosts, you supply a host pattern to the ansible command. 
 An inventory file can contain a lot more information, it can organize your hosts in groups or define variables. In our example, the current inventory has the groups web and control. Run Ansible with these host patterns and observe the output:
 
 ```
-[student<X>DevOps-Workshop1]$ ansible webserver  --list-hosts
-[student<X>DevOps-Workshop1]$ ansible dbservers --list-hosts
+[student<X>DevOps-Workshop1]$ ansible webserver --list-hosts
+[student<X>DevOps-Workshop1]$ ansible dbserver --list-hosts
 ```
 
 ### Step 2 - The Ansible Configuration Files
@@ -58,7 +58,8 @@ Let’s start with something really basic - pinging a host. To do that we use th
 
 Ansible needs to know that it should use the ping module: The -m option defines which Ansible module to use. Options can be passed to the specified modul using the -a option.
 
-```[student<X>DevOps-Workshop1]$ ansible webserver -m ping
+```
+[student<X>DevOps-Workshop1]$ ansible webserver -m ping
 node2 | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python"
