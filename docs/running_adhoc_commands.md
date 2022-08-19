@@ -18,16 +18,16 @@ To use the ansible command for host management, you need to provide an inventory
 all:
   hosts:
     mail.example.com:
+      ansible_connection: local
   children:
     webserver:
       hosts:
         foo.example.com:
           ansible_connection: local
-    dbservers:
+    dbserver:
       hosts:
         bar.example.com:
           ansible_connection: local
-
 ```
 
 To reference inventory hosts, you supply a host pattern to the ansible command. Ansible has a --list-hosts option which can be useful for clarifying which managed hosts are referenced by the host pattern in an ansible command.
