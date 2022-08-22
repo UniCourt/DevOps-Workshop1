@@ -40,7 +40,8 @@ Now edit your playbook to pull the image only when version is 1.0
       state: latest
   ....    
    - name: Pull the docker image
-     cmd: "docker pull {{ image }}"
+     shell:
+       cmd: "docker pull {{ image }}"
      when: version == "1.0"
 ```
 
@@ -60,7 +61,8 @@ Loops enable us to repeat the same task over and over again. For example, lets s
       state: latest
   ....     
    - name: Pull the docker image
-     cmd: "docker pull {{ item }}"
+     shell:
+       cmd: "docker pull {{ item }}"
      loop:
      - postgres
      - alpine
@@ -82,10 +84,11 @@ Let’s rewrite the playbook to pull the images with different versions
     package:
       name: docker-ce
       state: latest
-  ....    
-     cmd: "docker pull {{ item.name }}:{{ item.version }}"
+  ....
+     shell:    
+       cmd: "docker pull {{ item.name }}:{{ item.version }}"
      loop:
-         - {name: postgres, version:1.0}
+         - {name: postgres, version: 1.0}
          - {name: alpine, version: 2.0}
 ```
 ___
