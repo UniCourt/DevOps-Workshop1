@@ -79,7 +79,7 @@ Now that we’ve defined the play, let’s add a task to get something done. We 
       state: latest
   - name: install latest docker cli
     package:
-      name: docker-cli
+      name: docker-ce-cli
       state: latest
   - name: install latest docker containerd
     package:
