@@ -47,7 +47,8 @@ image: postgres
       state: latest
   ....    
    - name: Pull the docker image
-     cmd: "docker pull {{ image }}"
+     shell:
+       cmd: "docker pull {{ image }}"
 ```
 
 ## Step 3 - Test the Result
@@ -83,7 +84,8 @@ Facts can be used in a Playbook like variables, using the proper naming, of cour
       state: latest
   ....       
    - name: Pull the docker image
-     cmd: "docker pull {{ image }}"
+     shell:
+       cmd: "docker pull {{ image }}"
    - name: Prints Ansible facts
      debug:
        msg: The default IPv4 address of {{ ansible_fqdn }} is {{ ansible_default_ipv4.address }}     

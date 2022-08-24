@@ -19,7 +19,9 @@ to start with three dashes (---)
 
 proper indentation using spaces and not tabs!
 
-There are some important concepts:
+For more information on YAML format: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+There are some important concepts: 
 
 - hosts: the managed hosts to perform the tasks on
 
@@ -48,7 +50,7 @@ On your control host ansible, create a directory called ansible-files and change
 [student<X>DevOps-Workshop1]$ cd ansible-files/
 ```
 
-Add a file called docker.yaml` with the following content.
+Add a file called docker.yaml` with the following content. (Use your favorite editor to create and edit the files)
 
 ```
 ---
@@ -77,7 +79,7 @@ Now that we’ve defined the play, let’s add a task to get something done. We 
       state: latest
   - name: install latest docker cli
     package:
-      name: docker-cli
+      name: docker-ce-cli
       state: latest
   - name: install latest docker containerd
     package:

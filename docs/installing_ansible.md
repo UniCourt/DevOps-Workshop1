@@ -2,7 +2,10 @@
 
 Run the following command:
 
-```sudo ansible/setup.sh```
+```
+[student<X>~]$ cd DevOps-Workshop1
+[student<X>DevOps-Workshop1]$ sudo ./setup.sh
+```
 
 ___
 
