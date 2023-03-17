@@ -18,7 +18,10 @@ and many other IT needs.
 
 ##### Docker
 - To install docker go to your cloned repository and run the following command
-- `sudo prerequisites/install_docker.sh`
+- ```shell
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  sh get-docker.sh
+  ```
 
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what is ansible and how to install it
