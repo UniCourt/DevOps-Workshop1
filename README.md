@@ -6,6 +6,7 @@ and many other IT needs.
 ## Prerequisite
 
 ##### Any Linux machine/VM with following packages installed
+- Install Ubuntu 22.04 LTS from [here](https://releases.ubuntu.com/22.04/)
 - [Python 3.6](https://www.python.org/downloads/source/) or above 
 - [pip3](https://pip.pypa.io/en/stable/installation/)
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (any recent version)
