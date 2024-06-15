@@ -1,42 +1,82 @@
-# Ansible Workshop
+# Devops Workshop-1
 
-One Day workshop on understanding Ansible to automate cloud provisioning, configuration management, application deployment, intra-service orchestration, 
-and many other IT needs.
+One Day workshop on understanding Git and Docker. Learn how Version Control System with the conjunction of 
+Containerization power modern industries. In this Workshop you will learn the basics of Git and Docker and start 
+harnessing the power of these two incredibly powerful and versatile tools.
 
-## Prerequisite
+## Prerequisites
 
-##### Any Linux machine/VM with following packages installed
-- Python 3.6 or above 
-- pip3
-- git (any recent version)
+### System Requirements
+- Os / Virtual Machine with the latest available Ubuntu installed.
+- Docker
+- [Git]( https://www.atlassian.com/git/tutorials/install-git#linux )
 
-##### GitHub account
-- Create an account on [GitHub](https://github.com/join) (if you don't already have one)
-- Fork [this](https://github.com/UniCourt/DevOps-Workshop1) repository and then clone it to your machine
-- You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone
+### GitHub Account
+- An account on [GitHub](https://github.com/join).
+- Fork [this](https://github.com/UniCourt/Devops-Workshop2-Docker) repository and then clone it to your machine.
+  - You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone.
 
+## Workshop environment setup
 
-##### Docker
-- To install docker go to your cloned repository and run the following command
-- `sudo prerequisites/install_docker.sh`
+### Check Installation
+  ```shell
+  $ git --version
+  git version 2.25.1
+
+  $ docker --version
+  Docker version 20.10.17, build 100c701
+
+  $ docker compose version
+  Docker Compose version v2.6.0
+
+  ```
+
+### Docker without sudo
+
+- To run docker commands as normal user without sudo, we need to create a group for docker and add the user to it.
+
+1. Create the docker group
+    ```shell
+    $ sudo groupadd docker
+    ```
+2. Add your user to docker group
+    ```shell
+    $ sudo usermod -aG docker $USER
+    ```
+3. Activate the changes to groups:
+    ```shell
+   $ newgrp docker
+    ```
+4. Verify that you can run docker commands without sudo.
+    ```shell
+   $ docker ps
+    ```
 
 ## What will you learn by the end of this workshop?
-- By the end of this workshop you will understand what is ansible and how to install it
-- You will understand how to run Ad-hoc commands via Ansible
-- You will understand what are Ansible Playbooks and how to write them
-- You will understand what are Ansible variables and how to use them in template
-- You will have installed Docker and Docker Compose on your machine via Ansible
+
+- Git
+  - What is Git?
+  - Difference between Git and other VCS.
+  - Git Commands.
+- Docker
+  - Introduction to Containerization.
+  - What is Docker?
+  - Run your own Containers.
+  - Run multiple containers with Docker Compose.
 
 ## Schedule
-| Time                    | Topics
-| ----------------------- |-------
-| 09:00 - 9:30            |  [`Introduction to Git`](prerequisites/introduction_to_git.md)
-| 9:30  - 10:00           |  [`What is Ansible`](/docs/what_is_ansible.md)
-| 10:00 - 10:30           |  [`Intstalling Ansible`](/docs/installing_ansible.md)
-| 10:30 - 11:30           |  [`Running Ad hoc commands`](/docs/running_adhoc_commands.md)
-| 11:30 - 1:00            |  [`Writing your first playbook`](/docs/writing_your_first_palybook.md)
-| 1:00 -  2:00            |  `Break`
-| 2:00 -  2:30            |  [`Variables`](/docs/variables.md)
-| 2:30 -  3:00            |  [`Conditionals and Loops`](/docs/conditionals_and_loops.md)
-| 3:00 -  3:30            |  [`Templates`](/docs/templates.md)
-| 3:30 -  4:30            |  `Q & A and Wrapping Up`
+
+| Time          | Topics                                                                     |
+|---------------|----------------------------------------------------------------------------|
+| 09:00 - 09:30 | [`What is Docker? Why Docker?`](./docs/docker_intro.md)                    |
+| 09:45 - 10:00 | [`Git Commands`](./docs/git_commands.md)                                   |
+| 10:00 - 10:45 | [`Writing a Dockerfile`](./docs/dockerfile_instructions.md)                |
+| 10:45 - 11:30 | [`Creating Our application`](./docs/creating_our_app.md)                   |
+| 11:30 - 12:00 | [`Updating and sharing the App`](./docs/updating_and_sharing_our_app.md)   |
+| 12:00 - 01:00 | [`Persisting our DB and Bind Mounts`](./docs/persisting_our_app.md)        |
+| 01:00 - 02:00 | [`Break`]                                                                  |
+| 02:00 - 03:30 | [`Multi-Container Apps`](./docs/multi_container_app.md)                    |
+| 03:00 - 04:00 | [`Using Docker Compose`](./docs/using_docker_compose.md)                   |
+| 04:00 - 05:00 | [`Image Building Best Practices`](./docs/image_building_best_practices.md) |                        |
+| 05:00 - 05:15 | [`Q & A`]                                                                  |
+| 05:15 - 05:30 | [`Wrapping Up`]                                                            |

@@ -25,7 +25,7 @@ Real-life projects generally have multiple developers working in parallel and th
 6. ### Pull:
     When the remote repository changes, our local copy is left behind. We can update our local copy with the new changes in the remote repository using the pull feature.
 ## General git flow:
-![git flow](gitflow.png)
+![git flow](../prerequisites/gitflow.png)
 
 Initially we create a local copy of the remote repository using git clone/pull to get copy/latest updates made to the repository.
 
@@ -34,3 +34,5 @@ Once we make changes to the local copy we need to add the modified files to the 
 Then we commit the changes made to the local git repository. Each commit in git records a snapshot of the state of the full repository along with the name, timestamp, and message of the committer.
 
 The changes committed in the local repository can be sent to the remote repository with the git push command. This command pushes all the committed changes to the remote repository.
+<br><hr>                                 
+[`Introduction to Git`](prerequisites/introduction_to_git.md)
