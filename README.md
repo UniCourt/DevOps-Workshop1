@@ -70,11 +70,12 @@ harnessing the power of these two incredibly powerful and versatile tools.
 |---------------|--------------------------------------------------------------------------|
 | 09:00 - 09:30 | [`Introduction to Git`](docs/git/introduction_to_git.md)                 |
 | 09:30 - 10:00 | [`Git Commands`](docs/git/git_commands.md)                               |
-| 10:00 - 10:30 | [`What is Docker ?`](./docs/dockerfile_instructions.md)                  |
-| 10:30 - 11:15 | [`Docker Commands`](./docs/docker_commands.md)                           |
-| 11:15 - 12:15 | [`Docker Compose`](./docs/docker_compose_introduction.md)                |
-| 12:15 - 01:00 | [`Introduction to Postgres`](./docs/postgres_introduction.md)            |
+| 10:00 - 10:30 | [`What is Docker ?`](docs/docker/docker_introduction.md)                 |
+| 10:30 - 11:00 | [`Docker Commands`](docs/docker/docker_commands.md)                      |
+| 11:00 - 11:30 | [`Docker Compose`](docs/docker/docker_compose_introduction.md)           |
+| 11:30 - 12:30 | [`Docker Compose Features`](docs/docker/docker_compose_features.md)      |
+| 12:30 - 01:00 | [`Introduction to Postgres`](docs/postgres/postgres_introduction.md)     |
 | 01:00 - 02:00 | `Break`                                                                  |
-| 02:00 - 02:30 | [`Docker Compose with Postgres`](./docs/postgres_with_docker_compose.md) |
+| 02:00 - 02:30 | [`Docker Compose with Postgres`](docs/postgres/postgres_with_docker_compose.md) |
 | 02:30 - 04:00 | `Using Postgres`                                                         |
 | 05:00 - 05:15 | `Q & Aand Wrapping Up`                                                   |

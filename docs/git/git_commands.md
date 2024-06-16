@@ -1,14 +1,6 @@
 # Setting up Git:
 <hr>
 
-## Create a GitHub account
-https://github.com/
-
-Run following command to verify if git works on your computer:
-
-    git --version
-<hr>
-
 ## Configure git:
 After installing git, to start using git from your computer, you must enter your credentials to identify 
 yourself as the author of your work. The username and email address should match the ones 
@@ -154,4 +146,5 @@ Steps to create a pull request:
 
 3. Add proper title, description and submit the merge request.
 <br><hr>
+[`Introduction to Git`](./introduction_to_git.md)<br>
 [`What is Docker ?`](../docker/docker_introduction.md)

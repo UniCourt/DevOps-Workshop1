@@ -41,4 +41,4 @@ Then we commit the changes made to the local git repository. Each commit in git 
 
 The changes committed in the local repository can be sent to the remote repository with the git push command. This command pushes all the committed changes to the remote repository.
 <br><hr>                                 
-[`Introduction to Git`](prerequisites/introduction_to_git.md)
+[`Git Commands`](./git_commands.md)
