@@ -1,0 +1,30 @@
+version: "3"
+services:
+  pgadmin:
+    image: dpage/pgadmin4:8.8
+    container_name: workshop_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
+      PGADMIN_DEFAULT_PASSWORD: password
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - 8080:80
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:15.7-alpine3.20
+    container_name: workshop_postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./schema:/var/lib/schema
+      - ./assets:/var/lib/assets
+
+volumes:
+  pgadmin:
+  postgres:

@@ -66,17 +66,15 @@ harnessing the power of these two incredibly powerful and versatile tools.
 
 ## Schedule
 
-| Time          | Topics                                                                     |
-|---------------|----------------------------------------------------------------------------|
-| 09:00 - 09:30 | [`What is Docker? Why Docker?`](./docs/docker_intro.md)                    |
-| 09:45 - 10:00 | [`Git Commands`](./docs/git_commands.md)                                   |
-| 10:00 - 10:45 | [`Writing a Dockerfile`](./docs/dockerfile_instructions.md)                |
-| 10:45 - 11:30 | [`Creating Our application`](./docs/creating_our_app.md)                   |
-| 11:30 - 12:00 | [`Updating and sharing the App`](./docs/updating_and_sharing_our_app.md)   |
-| 12:00 - 01:00 | [`Persisting our DB and Bind Mounts`](./docs/persisting_our_app.md)        |
-| 01:00 - 02:00 | [`Break`]                                                                  |
-| 02:00 - 03:30 | [`Multi-Container Apps`](./docs/multi_container_app.md)                    |
-| 03:00 - 04:00 | [`Using Docker Compose`](./docs/using_docker_compose.md)                   |
-| 04:00 - 05:00 | [`Image Building Best Practices`](./docs/image_building_best_practices.md) |                        |
-| 05:00 - 05:15 | [`Q & A`]                                                                  |
-| 05:15 - 05:30 | [`Wrapping Up`]                                                            |
+| Time          | Topics                                                                |
+|---------------|-----------------------------------------------------------------------|
+| 09:00 - 09:30 | [`Introduction to Git`](docs/git/introduction_to_git.md)              |
+| 09:30 - 10:00 | [`Git Commands`](docs/git/git_commands.md)                            |
+| 10:00 - 10:30 | [`What is Docker ?`](./docs/dockerfile_instructions.md)               |
+| 10:30 - 11:15 | [`Docker Commands`](./docs/docker_commands.md)                        |
+| 11:15 - 12:15 | [`Docker Compose`](./docs/docker_compose_introduction.md)             |
+| 12:15 - 01:00 | [`Introduction to Postgres`](./docs/postgres_introduction.md)         |
+| 01:00 - 02:00 | `Break`                                                               |
+| 02:00 - 02:30 | [`Docker Compose with Postgres`](./docs/postgres_with_docker_compose.md)       |
+| 02:30 - 04:00 | [`Using Docker Compose`](./docs/using_docker_compose.md)              |
+| 05:00 - 05:15 | `Q & Aand Wrapping Up`                                                |
