@@ -2,7 +2,30 @@
 The basic commands for the Docker CLI.
 <hr>
 
-## 1. Docker version
+
+## 1. Docker without sudo
+
+- To run docker commands as normal user without sudo, we need to create a group for docker and add the user to it.
+
+1. Create the docker group
+    ```shell
+    $ sudo groupadd docker
+    ```
+2. Add your user to docker group
+    ```shell
+    $ sudo usermod -aG docker $USER
+    ```
+3. Activate the changes to groups:
+    ```shell
+   $ newgrp docker
+    ```
+4. Verify that you can run docker commands without sudo.
+    ```shell
+   $ docker ps
+    ```
+<hr>
+
+## 2. Docker version
 To find the installed docker version
 Command:
 ```
@@ -15,7 +38,7 @@ Docker version 19.03.9, build 9d988398e7
 ```
 <hr>
 
-## 2. Downloading image
+## 3. Downloading image
 To work with any Docker image we need to download the docker image first.<br /> 
 Command:
 ```
@@ -27,7 +50,7 @@ docker pull alpine:latest
 ```
 <hr>
 
-## 3. List all the docker images
+## 4. List all the docker images
 To list all the images that are available in the host machine.
 <br />
 Command:
@@ -42,7 +65,7 @@ alpine      latest  c059bfaa849c    6 weeks ago  5.59MB
 ```
 <hr>
 
-## 4. Run docker image
+## 5. Run docker image
 The `docker run` command is used to launch Docker containers.
 
 When the `docker run` commands is executed an isolated process with its own filesystem and network is spawned.
@@ -64,7 +87,7 @@ exit
 ```
 <hr>
 
-## 5. Running containers
+## 6. Running containers
  `docker ps` will list the running containers
 <br>
 Command:
@@ -79,7 +102,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 <hr>
 
-## 6. Access the docker container
+## 7. Access the docker container
 `docker exec` executes a command in a running container.
 <br>
 Command to execute into container:
@@ -104,7 +127,7 @@ helloworld.txt
 `touch` command to create a blank file<br />
 <hr>
 
-## 7. Stop the container
+## 8. Stop the container
 `docker stop` command to stop the running container 
 <br />
 Command:
@@ -124,7 +147,7 @@ docker stop <CONTAINER_NAME>
 Here once you stop the container, the container is still available locally, but it is not in the running state.<br>
 <hr>
 
-## 8. List all the containers
+## 9. List all the containers
 `docker ps -a` will list all the containers including stopped containers.
 <br>
 Example output:
@@ -135,7 +158,7 @@ CONTAINER ID        IMAGE                     COMMAND                  CREATED  
 ```
 <hr>
 
-## 9. Start the container
+## 10. Start the container
 Let's start the stopped `alpine:latest` container again.
 <br>
 Command:
@@ -153,7 +176,7 @@ docker start 4cc4008815d8
 ```
 <hr>
 
-## 10. Remove the container 
+## 11. Remove the container 
 You can remove the container or multiple containers by `docker rm` command.<br>
 Command
 ```
@@ -167,7 +190,7 @@ docker rm 4cc4008815d8
 Note: Execute this only after you stop the container
 <hr>
 
-## 11. Removing image
+## 12. Removing image
 You can remove the local images by `docker rmi` command.
 <br>
 Command:
@@ -179,6 +202,3 @@ Example: Remove alpine:latest image
 docker rmi c059bfaa849c
 ```
 <hr>
-
-[`What is Docker ?`](./docker_introduction.md)<br>
-[`Docker Compose`](./docker_compose_introduction.md)

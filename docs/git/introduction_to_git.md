@@ -40,5 +40,4 @@ Once we make changes to the local copy we need to add the modified files to the 
 Then we commit the changes made to the local git repository. Each commit in git records a snapshot of the state of the full repository along with the name, timestamp, and message of the committer.
 
 The changes committed in the local repository can be sent to the remote repository with the git push command. This command pushes all the committed changes to the remote repository.
-<br><hr>                                 
-[`Git Commands`](./git_commands.md)
+<hr>

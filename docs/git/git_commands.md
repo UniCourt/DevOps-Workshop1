@@ -145,6 +145,4 @@ Steps to create a pull request:
 2. Then select the base branch and compare branch that needs to be merged. The base branch is the one that has your changes and the compare branch is the original branch.
 
 3. Add proper title, description and submit the merge request.
-<br><hr>
-[`Introduction to Git`](./introduction_to_git.md)<br>
-[`What is Docker ?`](../docker/docker_introduction.md)
+<hr>

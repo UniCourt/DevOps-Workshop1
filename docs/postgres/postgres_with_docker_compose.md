@@ -30,5 +30,3 @@ CREATE DATABASE e_commerce;
 psql -U postgres -d student < sql_file/schema.sql
 ```
 <hr>
-
-[`Introduction to Postgres`](./postgres_introduction.md)

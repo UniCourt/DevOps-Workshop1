@@ -23,6 +23,3 @@ same container that works in the same way.
 Docker's container-based platform allows for highly portable workloads. Docker containers can run on a developer's <br>
 local laptop, on physical or virtual machines in a data center, on cloud providers, or in a mixture of environments.
 <hr>
-
-[`Git Commands`](../git/git_commands.md)<br>
-[`Docker Commands`](./docker_commands.md)

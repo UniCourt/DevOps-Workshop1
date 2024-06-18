@@ -31,27 +31,6 @@ harnessing the power of these two incredibly powerful and versatile tools.
 
   ```
 
-### Docker without sudo
-
-- To run docker commands as normal user without sudo, we need to create a group for docker and add the user to it.
-
-1. Create the docker group
-    ```shell
-    $ sudo groupadd docker
-    ```
-2. Add your user to docker group
-    ```shell
-    $ sudo usermod -aG docker $USER
-    ```
-3. Activate the changes to groups:
-    ```shell
-   $ newgrp docker
-    ```
-4. Verify that you can run docker commands without sudo.
-    ```shell
-   $ docker ps
-    ```
-
 ## What will you learn by the end of this workshop?
 
 - Git

@@ -140,6 +140,3 @@ Docker allows us to control the amount of CPU and memory a container will use.
               memory: 50M
     ```
 <hr>
-
-[`Docker Compose`](./docker_compose_introduction.md)<br>
-[`Introduction to Postgres`](../postgres/postgres_introduction.md)
