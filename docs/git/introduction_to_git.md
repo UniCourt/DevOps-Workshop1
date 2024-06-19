@@ -1,4 +1,6 @@
 # Introduction to GIT:
+<hr>
+
 ## What is git?
 Git is a free and open-source distributed version control system designed to handle projects with speed and efficiency. 
 
@@ -6,6 +8,8 @@ Real-life projects generally have multiple developers working in parallel and th
 - Maintain history of what changes have happened
 - Ensures no conflicts between developer’s codes
 - Revert or bo back to previous versions
+<hr>
+
 ## Git terminologies:
 1. ### Repository:
     A repository is similar to how you store files in a folder or directory on your computer. In GitLab, files are stored in a repository. A remote repository refers to the files in GitLab and a local copy refers to the files on your computer.
@@ -24,6 +28,8 @@ Real-life projects generally have multiple developers working in parallel and th
     After changes are made to the local copy of a repository we can upload the changes to the remote repository using the push feature.
 6. ### Pull:
     When the remote repository changes, our local copy is left behind. We can update our local copy with the new changes in the remote repository using the pull feature.
+<hr>
+
 ## General git flow:
 ![git flow](gitflow.png)
 
@@ -34,3 +40,4 @@ Once we make changes to the local copy we need to add the modified files to the 
 Then we commit the changes made to the local git repository. Each commit in git records a snapshot of the state of the full repository along with the name, timestamp, and message of the committer.
 
 The changes committed in the local repository can be sent to the remote repository with the git push command. This command pushes all the committed changes to the remote repository.
+<hr>
