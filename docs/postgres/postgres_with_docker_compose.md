@@ -27,6 +27,6 @@ CREATE DATABASE e_commerce;
 
 4. Dump schema.sql file to e_commerce database
 ```
-psql -U postgres -d student < sql_file/schema.sql
+psql -U postgres -d e_commerce < /var/lib/schema/schema.sql
 ```
 <hr>

@@ -13,6 +13,7 @@ services:
       - pgadmin:/var/lib/pgadmin
     depends_on:
       - postgres
+
   postgres:
     image: postgres:15.7-alpine3.20
     container_name: workshop_postgres
@@ -23,7 +24,6 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
       - ./schema:/var/lib/schema
-      - ./assets:/var/lib/assets
 
 volumes:
   pgadmin:
