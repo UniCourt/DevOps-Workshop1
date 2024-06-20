@@ -4,6 +4,7 @@ One Day workshop on understanding Git and Docker. Learn how Version Control Syst
 Containerization power modern industries. In this Workshop you will learn the basics of Git and Docker and start 
 harnessing the power of these two incredibly powerful and versatile tools.
 
+
 ## Prerequisites
 
 ### System Requirements
@@ -58,5 +59,7 @@ harnessing the power of these two incredibly powerful and versatile tools.
 | 02:00 - 02:30 | [`Docker Compose with Postgres`](docs/postgres/postgres_with_docker_compose.md) |
 | 02:30 - 04:00 | `Using Postgres`                                                         |
 | 04:00 - 04:15 | `Q & Aand Wrapping Up`                                                   |
+
 Good Morning
 HIII
+
