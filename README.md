@@ -4,9 +4,7 @@ One Day workshop on understanding Git and Docker. Learn how Version Control Syst
 Containerization power modern industries. In this Workshop you will learn the basics of Git and Docker and start 
 harnessing the power of these two incredibly powerful and versatile tools.
 
-## Prerequisites
-
-### System Requirements
+## sakshath
 - Os / Virtual Machine with the latest available Ubuntu installed.
 - Docker
 - [Git]( https://www.atlassian.com/git/tutorials/install-git#linux )
