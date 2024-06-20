@@ -19,7 +19,7 @@ harnessing the power of these two incredibly powerful and versatile tools.
 ## Workshop environment setup
 
 ### Check Installation
-  ```shell
+ ### ```shell
   $ git --version
   git version 2.25.1
 
