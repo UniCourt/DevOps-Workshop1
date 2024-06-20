@@ -1,4 +1,4 @@
-# Setting up Git::
+# Setting up Git:
 <hr>
 
 ## Configure git:
