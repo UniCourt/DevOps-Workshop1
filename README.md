@@ -1,4 +1,4 @@
-June 20,2024 # Devops Workshop-1
+June 20 # Devops Workshop-1
 
 One Day workshop on understanding Git and Docker. Learn how Version Control System with the conjunction of 
 Containerization power modern industries. In this Workshop you will learn the basics of Git and Docker and start 
