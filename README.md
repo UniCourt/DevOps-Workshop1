@@ -43,4 +43,4 @@ and many other IT needs.
 | 2:00 -  2:30            |  [`Variables`](/docs/variables.md)
 | 2:30 -  3:00            |  [`Conditionals and Loops`](/docs/conditionals_and_loops.md)
 | 3:00 -  3:30            |  [`Templates`](/docs/templates.md)
-| 3:30 -  4:30            |  `Q & A and Wrapping Up`
+| 3:30 -  4:30            |  `Q & A and Wrapping Up`ddhdhdeh
